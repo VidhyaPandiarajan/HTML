@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Example</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Audiowide">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <style>
+         body
+        {
+            background-color: rgb(182, 200, 196);
+            color:rgb(29, 87, 106);
+        }
+        h2{
+            font-size: 50px;
+            text-align: center;
+            font-style: italic;
+            text-shadow: 2px 2px 5px red;
+            text-decoration-line: underline;
+  text-decoration-style: double;
+        }
+        h3.brownbackground{
+           background-color: brown; 
+           text-align: center;
+           font-size: 5vw;
+         
+        }
+        h3.keyboard{
+            font-size:xx-large;
+        }
+        
+        p.small{
+            font-variant: small-caps;
+            font-size: 20px;
+        }
+        p.Googlefont{
+         font-family: "Sofia",sans-serif;
+         color: rgb(255, 0, 111);
+        }
+        p.list{
+            font-size: x-large;
+            color: blueviolet;
+            text-decoration: underline;
+        }
+        
+        a:link{
+            color:red
+        }
+        a:visited{
+            color: purple;
+        }
+        a:hover{
+            color: rgb(76, 197, 58);
+        }
+        a:active{
+            color:deeppink;
+        }
+        div {
+        margin-bottom: 10px;
+      }
+      label {
+        display: inline-block;
+        width: 150px;
+        text-align: right;
+      }
+      input[type=number]:focus {
+  background-color: rgb(10, 191, 252);
+}
+ul.emoji-list{
+    list-style-type: none;
+}
+ul.emoji-list>li:before{
+    content:"\01F354";
+    margin-right: 8px;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+        </style>
+        </head>
+        <body>
+        
+
+                <h2>Introduction of OS and Web Design</h2>
+                <p class="small">An operating system (OS) is a collection of software that manages computer hardware resources and provides common services for computer programs.</p>
+                <p class="Googlefont">The operating system is a vital component of the system software in a computer system.An Operating System (OS) is an interface between a computer user and computer hardware.</p>
+                <p class="font-effect-fire">Memory management refers to management of Primary Memory or Main Memory. Main memory is a large array of words or bytes where each word or byte has its own address.</p>
+                <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites.</p>
+                <p>The term "web design" is normally used to describe the design process relating to the front-end (client side) design of a website including writing markup. Web design partially overlaps web engineering in the broader scope of web development.</p>
+        
+            <h3 class="brownbackground">Reference Links:</h3><br>
+            <a href="https://www.w3schools.in">W3schools</a><br><br>
+            <h3 class="keyboard"><u>Monthly Expense Report &#129409;</u></h3>
+    <form action="Report.html" method="post">
+        <div>
+        <label for="date">Date:</label>
+        <input type="date" id="Date" name="Date"><br><br>
+        </div>
+        <div>
+        <label for="MTG">Mortgage:</label>
+        <input type="number" id="Mortgage" name="Mortgage"><br><br>
+        </div>
+        <div>
+        <label for="Gas">Gas:</label>
+        <input type="number" id="Gas" name="Gas"><br><br>
+        </div>
+        <div>
+        <label for="Childcare">Childcare:</label>
+        <input type="number" id="Childcare" name="Childcare"><br><br>
+        </div>
+        <div>
+        <label for="insurance">Insurance:</label>
+        <input type="number" id="Insurance" name="Insurance"><br><br>
+        </div>
+        <div>
+        <label for="expense"></label>
+        
+  <input type="submit" value="Save"></div>
+  <h2>The list-style-type Property</h2>
+
+<p class="list">Example of unordered lists:</p>
+<ul class="emoji-list">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+
+<p class="list">Example of ordered lists:</p>
+<ol class="c">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="d">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+    </form>
+        </body>
+        </html>
