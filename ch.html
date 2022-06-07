@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Home page</h3>
+    <h4>
+        <span id="Name"></span> who is a <span id="Designation"></span> will get $<span id="Calculation"></span>
+    </h4>
+    <script>
+        var Name=window.localStorage.getItem('Name');
+        document.getElementById("Name").innerHTML=Name;
+
+        var Cal=window.localStorage.getItem('Calculation');
+        document.getElementById("Calculation").innerHTML=Cal;
+        
+        var Des=window.localStorage.getItem('Des');
+        document.getElementById("Designation").innerHTML=Des;
+    </script>
+</body>
+</html>
