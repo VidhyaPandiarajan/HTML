@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            luckynumber
+        </title>
+        <style>
+            h3,h4{
+                text-transform: capitalize;
+                
+                text-decoration: none;
+                
+            }
+            #check {
+                border-color: rgb(252, 210, 210);
+                border-style: double;
+                margin-left: 50px;
+                background-color: rgb(205, 235, 245);
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h3>Guess the number between 0 to 20</h3>
+        <h4>Click the button to start guessing the lucky number</h4>
+        <input type="submit" id="check" value="check" onclick="getcheck()">
+<script>
+function getcheck(){
+
+var luckyNumber = Math.floor(Math.random()*20)+1;
+var numTurns = 0;
+var result = false;
+
+while(userNumber != luckyNumber && numTurns < 5) {
+    numTurns++;
+    var userNumber = prompt("Turn" + numTurns + ":Can you guess my lucky number?");
+    if(luckyNumber == userNumber) {
+        alert("you got it right!");
+        result = true;
+    }
+    else if (luckyNumber > userNumber) {
+        alert("Too Low");
+    }
+    else if (luckyNumber < userNumber) {
+        alert("too high");
+    }
+    else {
+        alert("that's not a number");
+    }
+    if (result === true) {
+        alert("You guessed right!");
+    } else if (result == false) {
+        alert("sorry your guess is not right");
+    }
+}
+}
+</script>
+    </body>
+
+</html>
