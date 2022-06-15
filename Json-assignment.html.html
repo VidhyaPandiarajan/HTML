@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <title>Document</title>
+    </head>
+    <body>
+<p>Employee details</p>
+<button onclick="getData()">click here </button><br>
+<ul id="details"></ul>
+<script>
+    function getData(){
+        $.ajax({
+            url:'https://gorest.co.in/public/v2/users',
+            dataType: 'json',
+            type: 'GET',
+            data:{
+                key:'value'
+            
+            },
+            success: (data)=>{
+                data.map((item) => {
+                    $("#details").append (`<li>${item.id} , ${item.name}</li>`);
+                });
+                
+            }
+
+            
+                
+                
+    });
+}
+    
+            
+                     
+            
+            
+            
+            
+             
+             
+    
+</script>
+    </body>
+</html>
